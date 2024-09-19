@@ -1,0 +1,175 @@
+/* css variables create */
+:root{
+    --primary-color: #239D76;
+    --secondary-color: #f8f8f8;
+    --third-color:#000000;
+    --forth-color:#dd3434;
+    --font-size: 16px ;
+}
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* global css */
+body{
+    background: var(--secondary-color);
+}
+
+
+/* header area start */
+.logo{
+    color: var(--primary-color);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-manu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.nav-manu ul{
+    display: flex;
+    gap: 50px;
+    padding-right: 40%;
+
+}
+
+.nav-manu ul li{
+    list-style: none;
+}
+
+.nav-manu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-size);
+    font-weight: bold;
+    cursor: pointer;
+    transition: hover .5s ease-in-out;
+}
+
+.nav-manu ul li a:hover{
+    color: var(--forth-color);
+}
+
+.header-btn{
+    color: #239D76;
+    font-size: var(--font-size);
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: hover .5s ease-in-out;
+}
+
+.header-btn:hover{
+    color: var(--forth-color);
+}
+/* header area end */
+
+
+/* hero section left start */
+.container{
+    display: flex;
+}
+
+.left-site{
+    margin-top: 80px;
+    padding-left: 40px;
+}
+
+.left-site h1{
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.left-site h1 span{
+    color: var(--primary-color);
+}
+
+.hero-p{
+    color:#5c5b5b;
+    font-size: 18px ;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+.hero-btn{
+    display:block;
+    margin-bottom: 30px;
+    width: 170px;
+    padding:17px 0px;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    background-color: #dd3434;
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: var(--secondary-color);
+    cursor: pointer;
+    border: 2px solid #dd3434;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.hero-btn span{
+    background-color: #dd3434;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    color: var(--secondary-color);
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #dd3434;
+    position: absolute;
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+
+.hero-btn:hover span{
+    width: 0%;
+}
+.hero-btn:hover{
+    background-color: transparent;
+    color: var(--third-color);
+}
+
+.twitter{
+    color: #5c5b5b;
+    cursor: pointer;
+}
+.facebook{
+    margin-right: 12px;
+    color: #5c5b5b;
+    cursor: pointer;
+}
+.instagram{
+    margin-right: 12px;
+    color: #5c5b5b;
+    cursor: pointer;
+}
+
+.copyright{
+    margin-top:20%;
+    color: #5c5b5b;
+    font-size: var(--font-size);
+}
+/* hero section left end */
+
+
+/*hero section right start */
+
+.right-site img{
+    width: 800px;
+    height: 605px;
+}
+
+/*hero section right end */
